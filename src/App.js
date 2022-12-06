@@ -10,14 +10,13 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <Navbar>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="about" element={<About />}></Route>
-          <Route path="product/:id" element={<SingleCocktail />}></Route>
-          <Route path="*" element={<Error />}></Route>
-        </Routes>
-      </Navbar>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="product/:id" element={<SingleCocktail />}></Route>
+        <Route path="*" element={<Error />}></Route>
+      </Routes>
     </Router>
   );
 }
