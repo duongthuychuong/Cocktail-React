@@ -15,7 +15,7 @@ const AppProvider = ({ children }) => {
       const response = await fetch(`${url}${searchTerm}`);
       const data = await response.json();
       const { drinks } = data;
-      console.log(drinks);
+      console.count("Je");
       if (drinks) {
         const newCocktails = drinks.map((drink) => {
           const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
