@@ -13,6 +13,8 @@ const CocktailList = () => {
   if (cocktails.length < 1) {
     return <h2 className="section-title">No cocktails found</h2>;
   }
+
+  console.log(cocktails);
   return (
     <div>
       <h2>cocktail list component</h2>
